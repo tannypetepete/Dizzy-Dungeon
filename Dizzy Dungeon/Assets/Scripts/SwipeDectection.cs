@@ -57,22 +57,26 @@ public class SwipeDectection : MonoBehaviour
             if (Input.mousePosition.y >= startPos.y + swipeSensitive)
             {
                 mouseDown = false;
+                player.SendMessage("MoveUp");
                 Debug.LogWarning("Swipe Up! Implement Player Movement.");
             }
             if (Input.mousePosition.y <= startPos.y - swipeSensitive)
             {
                 mouseDown = false;
+                player.SendMessage("MoveDown");
                 Debug.LogWarning("Swipe Down! Implement Player Movement.");
             }
 
             if (Input.mousePosition.x >= startPos.x + swipeSensitive)
             {
                 mouseDown = false;
+                player.SendMessage("MoveRight");
                 Debug.LogWarning("Swipe Right! Implement Player Movement.");
             }
             if (Input.mousePosition.x <= startPos.x - swipeSensitive)
             {
                 mouseDown = false;
+                player.SendMessage("MoveLeft");
                 Debug.LogWarning("Swipe Left! Implement Player Movement.");
             }
         }
