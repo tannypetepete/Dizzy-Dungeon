@@ -7,7 +7,7 @@ public class SwipeDectection : MonoBehaviour
     public PlayerController player;
     private Vector2 startPos;
     public int swipeSensitive = 120; //# of pixels needed to detect a swipe
-    private bool fingerDown;
+    //private bool fingerDown;
     private bool mouseDown;
 
     private void Update()
@@ -27,30 +27,30 @@ public class SwipeDectection : MonoBehaviour
             Debug.Log("Mouse Swipe");
         }
 
-        if (fingerDown)
-        {
-            if (Input.touches[0].position.y >= startPos.y + swipeSensitive)
-            {
-                fingerDown = false;
-                Debug.LogWarning("Swipe Up! Implement Player Movement.");
-            }
-            if (Input.touches[0].position.y <= startPos.y - swipeSensitive)
-            {
-                fingerDown = false;
-                Debug.LogWarning("Swipe Down! Implement Player Movement.");
-            }
+        //if (fingerDown)
+        //{
+        //    if (Input.touches[0].position.y >= startPos.y + swipeSensitive)
+        //    {
+        //        fingerDown = false;
+        //        Debug.LogWarning("Swipe Up! Implement Player Movement.");
+        //    }
+        //    if (Input.touches[0].position.y <= startPos.y - swipeSensitive)
+        //    {
+        //        fingerDown = false;
+        //        Debug.LogWarning("Swipe Down! Implement Player Movement.");
+        //    }
 
-            if (Input.touches[0].position.x >= startPos.x + swipeSensitive)
-            {
-                fingerDown = false;
-                Debug.LogWarning("Swipe Right! Implement Player Movement.");
-            }
-            if (Input.touches[0].position.x <= startPos.x - swipeSensitive)
-            {
-                fingerDown = false;
-                Debug.LogWarning("Swipe Left! Implement Player Movement.");
-            }
-        }
+        //    if (Input.touches[0].position.x >= startPos.x + swipeSensitive)
+        //    {
+        //        fingerDown = false;
+        //        Debug.LogWarning("Swipe Right! Implement Player Movement.");
+        //    }
+        //    if (Input.touches[0].position.x <= startPos.x - swipeSensitive)
+        //    {
+        //        fingerDown = false;
+        //        Debug.LogWarning("Swipe Left! Implement Player Movement.");
+        //    }
+        //}
 
         if (mouseDown)
         {
