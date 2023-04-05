@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -35,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.transform.CompareTag("Finish")){ 
             Debug.Log("Level Win!");
+            SceneManager.LoadScene("Main Menu");
         }
     }
 }
