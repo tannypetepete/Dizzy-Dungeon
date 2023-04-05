@@ -18,4 +18,9 @@ public class LevelManager : MonoBehaviour
     {
         
     }
+
+    void Restart()
+    {
+        player.transform.position = spawnPoint.transform.position;
+    }
 }
