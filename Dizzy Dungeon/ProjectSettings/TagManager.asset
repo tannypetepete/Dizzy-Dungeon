@@ -4,15 +4,22 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Wall
+  - Goal
+  - Trap
   - Enemy
+  - wallRight
+  - wallLeft
+  - wallTop
+  - wallEnd
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - hide
   - Water
   - UI
-  - 
+  - canvas
   - 
   - 
   - 
